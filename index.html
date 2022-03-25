@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess My Number</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <main class="container">
+    <div class="part-1">
+      <h1>Guess My Number</h1>
+      <p id="game-rule">choose a number between 1 and 20</p>
+    </div>
+    <div class="part-2">
+      <div class="circle">
+        <div class="score-plate" id="score-plate">
+          <h2 id="secret-code">?</h2>
+        </div>
+      </div>
+      <hr>
+      <div class="line-circle"></div>
+      <div class="line-top"></div>
+      <div class="line-bottom"></div>
+
+    </div>
+    <div class="part-3">
+      <div class="top" id="input-plate">
+        <h3>Your Guess!</h3>
+        <input type="number" name="guess" id="input" class="guess">
+        <button class="check" id="check">Check!</button>
+      </div>
+      <button class="game-action" id="game-action">Start Game</button>
+
+      <div class="details" id="scores">
+        <p class="message">Message: <span id="message"></span></p>
+        <p class="score">Score: <span id="score">10</span></p>
+        <p>High Score: <span id="high-score">0</span></p>
+
+      </div>
+    </div>
+  </main>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
